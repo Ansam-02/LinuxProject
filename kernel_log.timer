@@ -1,0 +1,9 @@
+[Unit]
+Description=Kernel Logs Backup Timer
+
+[Timer]
+OnCalendar=*:0/1
+Unit=kernel_logs_backup.service
+
+[Install]
+WantedBy=timers.target
