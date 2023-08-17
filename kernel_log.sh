@@ -16,7 +16,7 @@ journalctl --since "1 hour ago" -k > "$LOG_FILENAME"
 tar -cjvf "$COMPRESSED_FILENAME" "$LOG_FILENAME"
 
 # Use dbxcli to upload the compressed file to Dropbox
-dbxcli put "$COMPRESSED_FILENAME"  "https://www.dropbox.com/home/LinuxProject"
+dbxcli put "$COMPRESSED_FILENAME"  "/home/ansam/Dropbox"
 
 # Clean up temporary files
 rm "$LOG_FILENAME" "$COMPRESSED_FILENAME"
