@@ -11,4 +11,11 @@ sudo /home/ansam
 cd /home/ansam
 git clone https://github.com/Ansam-02/BookManagementSystem
 cd app && npm install
+
 npm run build
+
+sudo mv app.service /etc/systemd/system
+
+sudo systemctl deamon-reload
+sudo systemctl enable app.service
+sudo reboot
