@@ -9,7 +9,7 @@ sudo apt install nodejs curl -y
 sudo /home/ansam
 
 cd /home/ansam
-git clone https://github.com/Ansam-02/BookManagementSystem
+git clone https://github.com/Ansam-02/BookManagementSystem.git app
 cd app && npm install
 
 npm run build
